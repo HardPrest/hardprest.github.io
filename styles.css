@@ -26,7 +26,7 @@
 }
 
 .card {
-  background-color: linear-gradient(135deg, white 0%, white 88%, black 89%, black 90% grey 91%, red 93%, red 93%, grey 95%, black 96%, black 97% white 98%, white 100%);;
+  background-image: linear-gradient(135deg, white 0%, white 88%, black 89%, black 90% grey 91%, red 93%, red 93%, grey 95%, black 96%, black 97% white 98%, white 100%);;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
