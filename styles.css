@@ -26,7 +26,7 @@
 }
 
 .card {
-  background-color: white;
+  background-color: linear-gradient(45deg, white 90%, black 91%, grey, lightgrey 96%, black 97%, white);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
