@@ -36,11 +36,21 @@
   margin-bottom: 1rem;
 }
 
+figure {
+  width: 100%;
+  height: auto;
+}
+
 img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  width: 100%;
+  height: auto;
 }
 
 /* Contact Form */
