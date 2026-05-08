@@ -17,6 +17,11 @@
   transform: translateY(-2px);
 }
 
+/* Header */
+.nav-links {
+  
+}
+
 /* Projects */
 .project-grid {
   display: grid;
