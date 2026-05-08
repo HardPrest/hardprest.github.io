@@ -7,7 +7,7 @@
   background-color: #FF00FF;
   color: white;
   text-decoration: none;
-  border: 1px cyan;
+  border: 1px solid cyan;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
