@@ -24,6 +24,10 @@
   background-image: linear-gradient(45deg, rgba(255, 0, 255, 1.0) 45%, rgba(255, 0, 255, 0.1) 60%, white 61%, white 100%);
 }
 
+.logo {
+  margin-left: 25px;
+}
+
 .nav-links li a {
   color: black;
 }
