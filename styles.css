@@ -1,13 +1,28 @@
 /* Reset */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Inter, system-ui, sans-serif;
+  background: #08040f;
+  color: #f4f4f8;
+}
+body {
+  overflow-x: hidden;
+}
 
 /* Buttons */
 .btn {
   display: inline-block;
   padding: 0.9rem 1.5rem;
-  background-color: #FF00FF;
+  background-color: #c63cff;
   color: white;
   text-decoration: none;
-  border: 1px solid cyan;
+  border: 2px solid rgba(0, 255, 255, 0.658);
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -21,11 +36,13 @@
 .site-header {
   width: 100%;
   height: 15%;
-  background-image: linear-gradient(45deg, rgba(255, 0, 255, 1.0) 45%, rgba(255, 0, 255, 0.1) 60%, white 61%, white 100%);
+  background-image: linear-gradient(45deg, #c63cff 45%, rgba(255, 0, 255, 0.1) 55%, rgba(255, 0, 255, 0.1) 60%, #100722 100%), 
+                    radial-gradient(circle at 84% -98%, rgba(0, 255, 255, 0.16), transparent 25%);
 }
 
 .logo {
   margin-left: 25px;
+  color: rgba(0, 255, 255, 0.45);
 }
 
 .nav-links li a {
@@ -44,6 +61,54 @@
 .nav-container {  
   display: flex;
   flex-direction: row;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 18% 20%, rgba(170, 100, 255, 0.22), transparent 24%),
+              radial-gradient(circle at 82% 18%, rgba(0, 255, 255, 0.16), transparent 18%),
+              linear-gradient(180deg, #100722 0%, #05020a 100%);
+}
+
+#motion-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  padding: 4rem 1.25rem;
+}
+
+.hero h2,
+.hero p {
+  color: #f9f9ff;
+}
+
+.hero p {
+  margin: 1.25rem 0 1.75rem;
+  max-width: 34rem;
+  line-height: 1.75;
+  color: #d7d7ea;
+}
+
+.hero .btn {
+  background-color: #c63cff;
+  box-shadow: 5px 5px 10px grey; 
+}
+
+body {
+  background: linear-gradient(180deg, #05020a 0%,#05020a 40%, #7a7a7a 100%);
 }
 
 /* Projects */
