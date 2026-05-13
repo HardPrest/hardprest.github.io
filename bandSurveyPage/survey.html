@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Survey</title>
+    <link rel="stylesheet" href="survey_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Rubik+Burned&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="#home" class="title-box">
+        <h1>Born of Ash Performance Survey</h1>
+        <p>Thank you for coming to our show! We appreciate any feedback.</p>
+    </section>
+
+    <form action="submit_survey" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="0" max="120"><label> (Optional)</label>
+        <br><br>
+
+        <label for="rating">How would you rate the performance?</label><br>
+        <select id="rating" name="rating" required>
+            <option value="">Select</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Terrible</option>
+        </select><br><br>
+
+        <label for="favorite-part">What was your favorite part(s) of the show?</label><br>
+        <input type="checkbox" id="favorite-part" name="favorite-part" value="music">
+        <label> Music</label><br>
+        <input type="checkbox" id="favorite-part" name="stage-presence" value="stage-presence">
+        <label> Stage Presence</label><br>
+        <input type="checkbox" id="favorite-part" name="lighting" value="lighting">
+        <label> Lighting</label><br>
+        <input type="checkbox" id="favorite-part" name="crowd-interaction" value="crowd-interaction">
+        <label> Crowd Interaction</label><br>
+        <input type="checkbox" id="favorite-part" name="favorite-part" value="other">
+        <label> Other </label><input type="text" name="other" placeholder="Please specify"><br><br>
+
+        <label for="see-again">Would you like to see Born of Ash perform again?</label><br>
+        <input type="radio" id="see-again" name="see-again" value="yes">
+        <label for="see-again">Yes</label><br>
+        <input type="radio" id="see-again" name="see-again" value="no">
+        <label for="see-again">No</label><br><br>
+
+        <label for="tell-a-friend">Would you recommend Born of Ash to a friend?</label><br>
+        <input type="radio" id="tell-a-friend" name="tell-a-friend" value="yes">
+        <label for="tell-a-friend">Yes</label><br>
+        <input type="radio" id="tell-a-friend" name="tell-a-friend" value="no">
+        <label for="tell-a-friend">No</label><br><br>
+
+        
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body> 
+
+</html>

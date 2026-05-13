@@ -1,0 +1,44 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+body h1 {
+    font-family: 'Rubik Burned', Arial, sans-serif;
+    color: white;
+    font-size: 5rem;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+body p {
+    margin: 20px auto;
+    font-family: 'Manufacturing Consent', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    
+    width: 80%;
+    margin: 0 auto 40px auto;
+    color: black;
+    align-self: center;
+    border: 2px solid rgba(211, 145, 22, 0.788);
+    background-color: rgba(211, 145, 22, 0.788);
+    border-radius: 20px;
+    padding: 5%;
+}
