@@ -42,3 +42,19 @@ form {
     border-radius: 20px;
     padding: 5%;
 }
+
+@media (min-width: 768px) {
+    form {
+        min-width: 400px;
+        width: 30%;
+        padding: 3%;
+    }
+
+    body h1 {
+        font-size: 5rem;
+    }
+
+    body p {
+        font-size: 2rem;
+    }
+}
