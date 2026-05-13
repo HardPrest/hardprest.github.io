@@ -41,6 +41,7 @@ a:active {
   text-decoration: none;
   border: 2px solid rgba(0, 255, 255, 0.658);
   border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
