@@ -111,6 +111,12 @@ body {
   background: linear-gradient(180deg, #05020a 0%,#05020a 40%, #7a7a7a 100%);
 }
 
+.section {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 4rem 1.25rem;
+}
+
 /* Projects */
 .project-grid {
   display: grid;
@@ -168,6 +174,13 @@ figcaption {
   min-height: 150px;
   resize: vertical;
 }
+
+#return-to-top {
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+
+}
+
 
 /* Footer */
 .site-footer {
