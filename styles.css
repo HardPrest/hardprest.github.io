@@ -17,19 +17,23 @@ body {
 
 a {
   color: cyan;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 
 a:hover {
   box-shadow: 0 5px 15px grey;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 
 a:focused {
   text-shadow: 0 5px 15px grey;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 
 a:active {
   color: #c63cff;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 
 /* Buttons */
