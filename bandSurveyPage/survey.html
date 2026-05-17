@@ -20,7 +20,7 @@
         <p>Thank you for coming to our show! We appreciate any feedback.</p>
     </section>
 
-    <form action="submit_survey" method="post">
+    <form action="submit_survey.php" method="post">
 
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
@@ -42,17 +42,24 @@
             <option value="1">1 - Terrible</option>
         </select><br><br>
 
-        <label for="favorite-part">What was your favorite part(s) of the show?</label><br>
-        <input type="checkbox" id="favorite-part" name="favorite-part" value="music">
-        <label> Music</label><br>
-        <input type="checkbox" id="favorite-part" name="stage-presence" value="stage-presence">
-        <label> Stage Presence</label><br>
-        <input type="checkbox" id="favorite-part" name="lighting" value="lighting">
-        <label> Lighting</label><br>
-        <input type="checkbox" id="favorite-part" name="crowd-interaction" value="crowd-interaction">
-        <label> Crowd Interaction</label><br>
-        <input type="checkbox" id="favorite-part" name="favorite-part" value="other">
-        <label> Other </label><input type="text" name="other" placeholder="Please specify"><br><br>
+        <label>What was your favorite part(s) of the show?</label><br>
+
+        <input type="checkbox" id="music" name="favorite_parts[]" value="Music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="stage_presence" name="favorite_parts[]" value="Stage Presence">
+        <label for="stage_presence">Stage Presence</label><br>
+
+        <input type="checkbox" id="lighting" name="favorite_parts[]" value="Lighting">
+        <label for="lighting">Lighting</label><br>
+
+        <input type="checkbox" id="crowd_interaction" name="favorite_parts[]" value="Crowd Interaction">
+        <label for="crowd_interaction">Crowd Interaction</label><br>
+
+        <input type="checkbox" id="other_checkbox" name="favorite_parts[]" value="Other">
+        <label for="other_checkbox">Other</label>
+
+        <input type="text" name="other" placeholder="Please specify"><br><br>
 
         <label for="see-again">Would you like to see Born of Ash perform again?</label><br>
         <input type="radio" id="see-again" name="see-again" value="yes">
@@ -70,6 +77,11 @@
 
         <label for="comments">Additional Comments:</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <div style="display:none;">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website">
+        </div>
 
         <input type="submit" value="Submit">
 
