@@ -45,6 +45,34 @@ form {
     padding: 5%;
 }
 
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 5%;
+    }
+
+    body h1 {
+        font-size: 3rem;
+    }
+
+    body p {
+        font-size: 1.5rem;
+    }
+
+}
+
 @media (min-width: 768px) {
     form {
         min-width: 400px;
