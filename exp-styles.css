@@ -143,7 +143,7 @@ body {
     background-color: rgba(255, 0, 255, 0.1);
     border-radius: 10px;
     padding: 2rem;
-    margin:auto
+    margin: 2rem auto;
 }
 
 .education {
@@ -253,5 +253,14 @@ figcaption {
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .education {
+    grid-template: 
+      "audit" 1fr
+      "sales" 1fr
+      "education" 1fr
+      "skills" 1fr
+       / 1fr;
   }
 }
