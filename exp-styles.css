@@ -263,4 +263,8 @@ figcaption {
       "skills" 1fr
        / 1fr;
   }
+
+  .skills {
+    max-height: 400px;
+  }
 }
